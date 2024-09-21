@@ -1,0 +1,10 @@
+com\dy\mapper\CommentMapperCustom.class
+com\dy\mapper\MyLikedVlogMapper.class
+com\dy\mapper\CommentMapper.class
+com\dy\my\mapper\MyMapper.class
+com\dy\mapper\FansMapper.class
+com\dy\mapper\UsersMapper.class
+com\dy\mapper\FansMapperCustom.class
+com\dy\mapper\VlogMapper.class
+com\dy\repository\MessageRepository.class
+com\dy\mapper\VlogMapperCustom.class

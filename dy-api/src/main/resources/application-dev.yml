@@ -1,0 +1,59 @@
+server:
+  port: 8090
+
+spring:
+  datasource:                                     # 数据源的相关配置
+    type: com.zaxxer.hikari.HikariDataSource      # 数据源的类型，可以更改为其他的数据源配置，比如druid
+    driver-class-name: com.mysql.jdbc.Driver      # mysql/MariaDB 的数据库驱动类名称
+<<<<<<< HEAD
+    url: jdbc:mysql://127.0.0.1:3306/dy-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+=======
+    url: jdbc:mysql://127.0.0.1:3306/dy-dev?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+>>>>>>> 1fa7c57a3458e78fec28a4f9679fa9bd8bf2d183
+    username: root
+    password: 123456
+    hikari:
+      connection-timeout: 30000               # 等待连接池分配连接的最大时间（毫秒），超过这个时长还没有可用的连接，则会抛出SQLException
+      minimum-idle: 5                         # 最小连接数
+      maximum-pool-size: 20                   # 最大连接数
+      auto-commit: true                       # 自动提交
+      idle-timeout: 600000                    # 连接超时的最大时长（毫秒），超时则会被释放（retired）
+      pool-name: DataSourceHikariCP           # 连接池的名字
+      max-lifetime: 18000000                  # 连接池的最大生命时长（毫秒），超时则会被释放（retired）
+      connection-test-query: SELECT 1
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+#    password: itzixi
+  data:
+    mongodb:
+<<<<<<< HEAD
+      uri: mongodb://root:root@127.0.0.1:27017
+=======
+      uri: mongodb://root:123456@127.0.0.1:27017
+>>>>>>> 1fa7c57a3458e78fec28a4f9679fa9bd8bf2d183
+#      uri: mongodb://127.0.0.1:27017
+      database: dy-dev
+
+
+# MinIO 配置
+minio:
+#  endpoint: http://10.219.46.10:9000      # MinIO服务地址
+#  fileHost: http://10.219.46.10:9000      # 文件地址host
+#  endpoint: http://192.168.189.246:9000      # MinIO服务地址
+#  fileHost: http://192.168.189.246:9000      # 文件地址host
+<<<<<<< HEAD
+  endpoint: http://47.97.18.58:9000      # MinIO服务地址
+  fileHost: http://47.97.18.58:9000      # 文件地址host
+  bucketName: xiaoqing                      # 存储桶bucket名称
+  accessKey: CS9R4M59xauAh883YXah                         # 用户名
+=======
+  endpoint: http://47.97.18.58:9000     # MinIO服务地址
+  fileHost: http://47.97.18.58:9000     # 文件地址host
+  bucketName: xiaoqing                     # 存储桶bucket名称
+  accessKey: CS9R4M59xauAh883YXah                       # 用户名
+>>>>>>> 1fa7c57a3458e78fec28a4f9679fa9bd8bf2d183
+  secretKey: ZAbnPRBw0B3WNS5cEaj5G3VDxlo0n7swdqd4IsWD
+  imgSize: 1024                           # 图片大小限制，单位：m
+  fileSize: 1024                          # 文件大小限制，单位：m                   # 密码

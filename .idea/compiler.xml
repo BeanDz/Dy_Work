@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-generator" />
+        <module name="dy-api" />
+        <module name="dy-common" />
+        <module name="dy-service" />
+        <module name="dy-mapper" />
+        <module name="dy-model" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dy-api" options="-parameters" />
+      <module name="dy-common" options="-parameters" />
+      <module name="dy-mapper" options="-parameters" />
+      <module name="dy-model" options="-parameters" />
+      <module name="dy-service" options="-parameters" />
+      <module name="xys-dy-dev" options="-parameters" />
+    </option>
+  </component>
+</project>
